@@ -1,0 +1,107 @@
+
+
+/* -------- General Layout ------------ */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #3063B5;
+}
+
+.page_wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* -------- Typeography ------------- */
+
+body {
+	color: #FFFFFF;
+	font-family: "Droid Serif", serif;
+}
+
+h1 {
+	font-family: "Rancho", cursive;
+	font-size: 48px;
+}
+
+h2 {
+	font-family: "Open Sans", serif;
+	font-size: 24px;
+}
+
+.page_title {
+	text-align: center;
+	color: #FFFFFF;
+	}
+
+.page_wrapper p {
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	width: 700px;
+	margin: 20px auto;
+	line-height: 1.3em;
+
+
+}	
+
+/* ----- Game Styling ------ */
+
+.icons {
+	width: 600px;
+	margin: 40px auto;
+	padding-left: 120px;
+}
+
+.icons li {
+	list-style: none;
+	display: inline-block;
+	padding: 30px;
+	text-align: center;
+}
+
+i {
+	color: #FFFFFF;
+}
+
+/* ------ Hover Styling ----- */
+
+i:hover {
+	color: #CE1483;
+}
+
+#icon1:hover {
+	color: #CE1483;
+}
+
+#icon2:hover {
+	color: #CE1483;
+}
+
+#icon3:hover {
+	color: #CE1483;
+}
+
+#button {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	width: 250px;
+	height: 30px;
+	color: #000000;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+	clear: both;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serf;
+}
+
+#button:hover {
+	background-color: #CE1483;
+}

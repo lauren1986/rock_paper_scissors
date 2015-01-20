@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Most Awesome Game Of Rock Paper Scissors Ever!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Rancho|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  	<div class="page_wrapper">
+
+      <h1 class="page_title">The Most Awesome Game Of Rock Paper Scissors Ever!</h1>
+      <p>Remember that boring childhood game? Well hold on to your pants, because this is the most exciting <em>Rock Paper Scissors</em> you'll ever play!</p>
+
+      <p>Try your hand and see if you can beat the all-knowing computer. Pick your choice below and see who wins..</p>
+
+      <ul class="icons">
+        <li id="userRock" class="choice"><i class="fa fa-square-o fa-spin fa-5x fa-fw"></i><h2>Rock</h2></li>
+        <li id="userPaper" class="choice"><i class="fa fa-file-text-o fa-spin fa-5x fa-fw"></i><h2>Paper</h2></li>
+        <li id="userScissors" class="choice"><i class="fa fa-scissors fa-spin fa-5x fa-fw"></i><h2>Scissors</h2></li>
+      </ul>
+
+      <div id="printResult"></div>
+
+    </div>
+
+  </body>
+
+  <script>
+  // CodeAcademy base, repurposed for this game's needs
+
+  // This finds all elements with the class name "choice"
+  	var userSubmission = document.GetElementsByClassName("choice");
+
+  // This function runs the game for the computer, allowing it to pick Rock, Paper or Scissors.
+
+    function playRPS() 
+    {
+
+		var computerChoice = Math.random();
+		if (computerChoice < 0.34) {
+			computerChoice = "rock";
+		} 
+		else if(computerChoice <= 0.67) {
+			computerChoice = "paper";
+		} 
+		else {
+			computerChoice = "scissors";
+		} 
+
+		console.log("Computer: " + computerChoice + "You: " + userChoice);
+
+	}
+
+	// This function compares the user's selection and the computer's selection to determine who wins.
+
+	var compare = function(userChoice, computerChoice) {
+    	if(choice1 == choice2) {
+        	return "The result is a tie"
+    	}
+    	else if(choice1 == "rock") {
+        	if(choice2 == "scissors") {
+            return "rock wins"
+        	}
+        else {
+            return "paper wins"
+        	}
+    	}
+    	else if (choice1 == "paper") {
+        	if(choice2 == "rock") {
+            return "paper wins"
+        }
+        else {
+            return "scissors wins"
+        }
+    	}
+    	else if (choice1 == "scissors") {
+        	if(choice2 == "rock") {
+            return "rock wins"
+        }
+        else {
+            return "scissors wins"
+        }
+    	}
+    };
+
+    // This runs the stored user click and initiates the game, so the computer's choice is run.
+
+  	userSubmission[0].onclick = playRPS;
+    userSubmission[1].onclick = playRPS;
+    userSubmission[2].onclick = playRPS;
+
+    // This function prints the final result of the game. UNFINISHED
+
+    var result = document.getElementById("printResult");
+
+
+  </script>
+</html>
